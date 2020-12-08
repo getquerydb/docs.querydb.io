@@ -18,7 +18,7 @@ Export Any Format
 #### Supported Data Sources
 
 QueryDB supports more than 7 SQL and NoSQL datasources, it can also be extended to support more. Below is a lis of build-in sources.
-[See Here](/providers/basics)
+[See Here](/providers/overview)
 
 #### Docker
 QueryDB is very easy to install and deploy in a Docker container.
