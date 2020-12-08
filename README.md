@@ -1,5 +1,6 @@
 <p align="center">
-  <a href="http://querydb.io/" target="_blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="QueryDB Logo" /></a>
+  <a href="http://querydb.io/" target="_blank">
+  <img src="https://docs.querydb.io/assets/logo.png" width="320" alt="QueryDB Logo" /></a>
 </p>
 
 ## Description
