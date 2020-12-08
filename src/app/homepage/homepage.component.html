@@ -1,0 +1,42 @@
+<app-header (toggle)="toggleSidebar()" [isSidebarOpened]="isSidebarOpened">
+  <div class="logo-wrapper">
+    <a
+      href="https://docs.querydb.io/"
+      title="Documentation | QueryDB - Query Any Database and Export to API Rest"
+    >
+      <img alt="QueuryDB Logo" src="/assets/logo-small.svg" />
+    </a>
+  </div>
+  
+</app-header>
+<div class="container-fluid">
+  <app-menu [class.opened]="isSidebarOpened" perfectScrollbar></app-menu>
+  <div class="container" [class.wide]="!isSidebarOpened">
+    <div class="page-wrapper">
+      <app-toc [contentReference]="contentRef"></app-toc>
+      <router-outlet (activate)="onRouteActivate($event)"></router-outlet>
+    </div>
+    <div class="sponsors-wrapper">
+      <div class="sponsors-container">
+        <h3>Support us</h3>
+        <p>
+          QueuryDB is an MIT-licensed open source project. It can grow thanks to the
+          support by these awesome people. If you'd like to join them, please
+          read more <a routerLink="/support">here</a>.
+        </p>
+      </div>
+    </div>
+    <app-footer>
+      <p>
+        Made by
+        <a
+          href="https://reynaldoclaros.com"
+          target="_blank"
+          title="Reynaldo Blog | Full-Stack Software Engineer"
+        >
+          Reynaldo Claros
+        </a>
+      </p>
+    </app-footer>
+  </div>
+</div>
