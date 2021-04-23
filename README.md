@@ -34,7 +34,7 @@ QueryB is an MIT-licensed open source project. It can grow thanks to the sponsor
 
 ## Stay in touch
 
-- Author - [Reynaldo Claros](https://twitter.com/RIClaros)
+- Author - [Reynaldo Claros](https://twitter.com/rclaros_pe)
 - Website - [https://querydb.io](https://querydb.io/)
 
 ## License
