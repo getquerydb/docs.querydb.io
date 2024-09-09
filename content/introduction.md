@@ -1,10 +1,10 @@
 ### Introduction
 
-QueryDB is a tool to allow anyone to take advantage of the power of large and small data, QueryDB allows connecting to multiple data sources, exploring and executing complex queries according to the language of the database engine, this data can be exported to many format as JSON, XML formats among others.
+QueryDB is a tool to allow anyone to take advantage of the power of large and small data, QueryDB allows connecting to multiple databases, exploring and executing complex queries according to the language of the database engine, this data can be exported to many format as JSON.
 
-Connect Any Sources
+Connect Relational Databases
 Explore and Execute Complex query
-Export Any Format
+Export to API REST
 
 #### QueryDB Features!
 
@@ -15,9 +15,9 @@ Export Any Format
   - **REST API** : Everything that can be done in the UI is also available through REST API
   - **Broad support for data sources** : Extensible data source API with native support for a long list of common databases and platforms
 
-#### Supported Data Sources
+#### Supported Databases
 
-QueryDB supports many SQL and NoSQL datasources, it can also be extended to support more. Below is a lis of build-in sources.
+QueryDB supports relational datasources, it can also be extended to support more. Below is a lis of build-in sources.
 [See Here](/providers/overview)
 
 #### Docker
@@ -27,28 +27,6 @@ By default, the Docker will expose port 8080, so change this within the Dockerfi
 
 ```sh
 docker build -t querydb/querydb:${package.json.version} .
-```
-
-#### Spring cloud
-Add the following dependency to your pom.xml after you have build this project locally.
-```xml
-<dependency>
-	<groupId>com.querydb</groupId>
-	<artifactId>querydb-app</artifactId>
-	<version>1.0.0.RELEASE</version>
-</dependency>
-```
-Create the QueryDB with only one single Annotation.
-```java
-@SpringBootApplication
-@EnableEurekaServer
-@EnableDiscoveryClient
-@EnableQueryDB
-public class Application {
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
-}
 ```
 
 #### Reporting Bugs and Contributing Code
